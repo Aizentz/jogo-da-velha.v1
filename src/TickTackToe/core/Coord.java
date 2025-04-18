@@ -8,8 +8,8 @@ import java.util.Objects;
 public record Coord(int i, int j) {
 
     public Coord{
-        ValidationUtils.require(i >= 0 && i <= Board.SIZE, "I is out of range PORRA");
-        ValidationUtils.require(j >= 0 && j <= Board.SIZE, "J is out of range PORRA");
+        ValidationUtils.require(i >= 0 && i <= Board.SIZE, "I is out of range");
+        ValidationUtils.require(j >= 0 && j <= Board.SIZE, "J is out of range");
     }
 
     public static Coord Parse(String text){
